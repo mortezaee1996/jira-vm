@@ -18,3 +18,12 @@
 - Integrate with the infrastructure DNS and NTP services.
 - Install and test Docker Engine and Compose.
 - Evaluate a valid Jira deployment method.
+
+## Git Repository Integration
+
+- Local repository: /opt/jira-vm
+- Remote: git@github.com:mortezaee1996/jira-vm.git
+- Branch: main
+- SSH authentication: successful
+- Initial push to GitHub: successful
+- Working tree: clean after push
