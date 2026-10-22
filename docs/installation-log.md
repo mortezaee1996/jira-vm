@@ -27,3 +27,13 @@
 - SSH authentication: successful
 - Initial push to GitHub: successful
 - Working tree: clean after push
+
+## Docker Engine Installation
+
+- Docker Engine: 29.9.2
+- Docker Compose: v5.6.1
+- Installation source: Official Docker Ubuntu APT repository
+- Docker daemon: Responding to sudo CLI requests
+- Non-root Docker access: Not enabled
+- hello-world image: Successfully pulled
+- Container execution: Pending final verification
