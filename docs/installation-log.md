@@ -43,3 +43,11 @@
 - hello-world image pull: successful
 - hello-world container execution: successful
 - Non-root Docker access: not enabled
+
+## Docker Health Check — 2026-10-22
+
+- Docker daemon status: active
+- Docker Compose configuration validation: successful
+- Health-check script: scripts/healthcheck/check-docker.sh
+- Script execution: successful
+- Project containers running: none
