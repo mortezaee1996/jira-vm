@@ -37,3 +37,9 @@
 - Non-root Docker access: Not enabled
 - hello-world image: Successfully pulled
 - Container execution: Pending final verification
+
+
+## Docker images test
+- hello-world image pull: successful
+- hello-world container execution: successful
+- Non-root Docker access: not enabled
