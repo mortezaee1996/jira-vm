@@ -1,0 +1,29 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: jira-postgres
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_DB: jira
+      POSTGRES_USER: jira
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jira -d jira"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+    networks:
+      - jira-backend
+
+volumes:
+  postgres_data:
+
+networks:
+  jira-backend:
+    driver: bridge
